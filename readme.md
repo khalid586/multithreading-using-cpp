@@ -107,5 +107,8 @@ int main() {
 
 ### Mutex Lock
 - Mutex(Mutual exclusion) lock is a synchronization mechanism which prevents multiple threads from accessing shared resources simultaneously to prevent race condition. 
+    - Cons:
+      - If any of the threads go into infinite loop without releasing the lock it will cause a deadlock and other threads won't be able to access the mutex.
+
 
 [Back to top](#multithreading)
