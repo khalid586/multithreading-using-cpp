@@ -18,18 +18,8 @@ Below the code saved in a file is called a program.
 using namespace std;
 
 
-void loop(){
-    int i = 0;
-
-    while(i < 500){
-       i++;
-       cout << s << ' ' << i << '\n';
-    }
-
-}
-
 int main() {
-    loop();
+    cout << "hello";
     return 0;
 }
 
@@ -39,8 +29,9 @@ int main() {
 [Back to top](#multithreading)
 
 ### Process
-- A running program is referred as a process. When the code(file) below is running it is known as process.
+- A running program is referred as a process. 
 
+When the code(file) below is running it is known as process.
 
 ```c++
 
@@ -49,22 +40,10 @@ int main() {
 using namespace std;
 
 
-void loop(){
-    int i = 0;
-
-    while(i < 500){
-       i++;
-       cout << s << ' ' << i << '\n';
-    }
-
-}
-
 int main() {
-    loop();
+    cout << "hello";
     return 0;
 }
-
-
 ```
 
 [Back to top](#multithreading)
