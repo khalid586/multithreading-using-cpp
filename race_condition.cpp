@@ -9,13 +9,27 @@ void printMessage(const string& message) {
     }
 }
 
+void loop(string s){
+    int i = 0;
+
+    while(i < 500){
+       i++;
+       cout << s << ' ' << i << '\n';
+    }
+
+}
+
 int main() {
-    thread t1(printMessage, "Thread 1");
-    thread t2(printMessage, "Thread 2");
+    // thread t1(printMessage, "Thread 1");
+    // thread t2(printMessage, "Thread 2");
+
+
+    thread t3(loop,"thread-1");
+    thread t4(loop,"thread-2");
 
     // Wait for both threads to finish execution
-    t1.join();
-    t2.join();
+    t3.join();
+    t4.join();
 
     cout << "Main thread finished execution" << endl;
     return 0;
