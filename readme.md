@@ -1,4 +1,4 @@
-## Multithreading
+# Multi threading
 - [Program](#program)
 - [Process](#process)
 - [Thread](#thread)
