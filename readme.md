@@ -8,7 +8,7 @@
 - [Mutex lock](#mutex-lock)
 
 
-### Program
+## Program
 - A program is a set of instructions(not being executed) saved in a file.
 
 Below the code saved in a file is called a program.
@@ -30,7 +30,7 @@ int main() {
 
 [Back to top](#table-of-contents)
 
-### Process
+## Process
 - A running program is referred as a process. 
 
 When the code(file) below is running it is known as process.
@@ -50,7 +50,7 @@ int main() {
 
 [Back to top](#table-of-contents)
 
-### Thread
+## Thread
 - A thread is the smallest unit of execution within a process which is responsible for performing specific tasks of the process.
 
 A thread has been spun in c++.
@@ -76,14 +76,14 @@ int main(){
 
 [Back to top](#table-of-contents)
 
-### Concurrency
+## Concurrency
 - Executing multiple tasks as the same time but not necessarily simultaneously, often by switching context is known as concurrency.
 
 [Example: Race condition](#race-condition)
 
 [Back to top](#table-of-contents)
 
-### Parallelism
+## Parallelism
 - Executing multiple tasks at the same simultaneously by using multiple cores, is known as parallelism. 
 
 ```python
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     print('this is the end!')
 ```
 
-### Race Condition
+## Race Condition
 - Race condition is such a condition where multiple threads/ processes are trying to modify a shared resource concurrently and the outcome depends on the **unpredictable** order of execution
 
 ```c++
@@ -136,7 +136,7 @@ int main() {
 
 [Back to top](#table-of-contents)
 
-### Mutex Lock
+## Mutex Lock
 - Mutex(Mutual exclusion) lock is a synchronization mechanism which prevents multiple threads from accessing shared resources simultaneously to prevent race condition. 
     - Cons:
       - If any of the threads go into infinite loop without releasing the lock it will cause a deadlock and other threads won't be able to access the mutex.
