@@ -2,6 +2,8 @@
 - [Program](#program)
 - [Process](#process)
 - [Thread](#thread)
+- [Concurrency](#concurrency)
+- [Parallelism](#parallelism)
 - [Race condition](#race-condition)
 - [Mutex lock](#mutex-lock)
 
@@ -73,6 +75,35 @@ int main(){
 ```
 
 [Back to top](#multithreading)
+
+### Concurrency
+- Executing multiple tasks as the same time but not necessarily simultaneously, often by switching context is known as concurrency.
+
+[Example: Race condition](#race-condition)
+
+[Back to top](#multithreading)
+
+### Parallelism
+- Executing multiple tasks at the same simultaneously by using multiple cores, is known as parallelism. 
+
+```python
+import multiprocessing
+import os
+def task(n):
+    print(f"Processing {n} (PID: {os.getpid()})")
+
+if __name__ == "__main__":
+    processes = []
+    for i in range(4):  # Creating 4 processes
+        p = multiprocessing.Process(target=task, args=(i,))
+        processes.append(p)
+        p.start()
+
+    for p in processes:
+        p.join()  # Wait for all processes to finish
+
+    print('this is the end!')
+```
 
 ### Race Condition
 - Race condition is such a condition where multiple threads/ processes are trying to modify a shared resource concurrently and the outcome depends on the **unpredictable** order of execution
