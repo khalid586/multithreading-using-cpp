@@ -1,4 +1,4 @@
-# Multi threading
+# Table of contents
 - [Program](#program)
 - [Process](#process)
 - [Thread](#thread)
@@ -28,7 +28,7 @@ int main() {
 
 ```
 
-[Back to top](#multithreading)
+[Back to top](#table-of-contents)
 
 ### Process
 - A running program is referred as a process. 
@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-[Back to top](#multithreading)
+[Back to top](#table-of-contents)
 
 ### Thread
 - A thread is the smallest unit of execution within a process which is responsible for performing specific tasks of the process.
@@ -74,14 +74,14 @@ int main(){
 }
 ```
 
-[Back to top](#multithreading)
+[Back to top](#table-of-contents)
 
 ### Concurrency
 - Executing multiple tasks as the same time but not necessarily simultaneously, often by switching context is known as concurrency.
 
 [Example: Race condition](#race-condition)
 
-[Back to top](#multithreading)
+[Back to top](#table-of-contents)
 
 ### Parallelism
 - Executing multiple tasks at the same simultaneously by using multiple cores, is known as parallelism. 
@@ -134,7 +134,7 @@ int main() {
 
 ```
 
-[Back to top](#multithreading)
+[Back to top](#table-of-contents)
 
 ### Mutex Lock
 - Mutex(Mutual exclusion) lock is a synchronization mechanism which prevents multiple threads from accessing shared resources simultaneously to prevent race condition. 
@@ -142,4 +142,4 @@ int main() {
       - If any of the threads go into infinite loop without releasing the lock it will cause a deadlock and other threads won't be able to access the mutex.
 
 
-[Back to top](#multithreading)
+[Back to top](#table-of-contents)
